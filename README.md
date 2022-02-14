@@ -1,6 +1,6 @@
 # BOOK API VERSION 1
 
-## Getting Started
+## Commencer 
 
 ### Installation des Dépendances
 
@@ -45,11 +45,11 @@ set FLASK_ENV=development
 flask run
 ``` 
 
-## API REFERENCE
+## Référence d'API
 
-Getting starter
+Commencer
 
-Base URL: At present this app can only be run locally and is not hosted as a base URL. The backend app is hosted at the default, http://localhost:5000; which is set as a proxy in frontend configuration.
+URL de base : à l'heure actuelle, cette application ne peut être exécutée que localement et n'est pas hébergée en tant qu'URL de base. L'application principale est hébergée par défaut, http://localhost:5000 ; qui est défini comme proxy dans la configuration frontale.
 
 ## Type d'erreur
 Les erreurs sont renvoyées sou forme d'objet au format Json:
@@ -65,7 +65,7 @@ L'API vous renvoie 4 types d'erreur:
 . 422: Unprocessable
 . 404: Not found
 
-## Endpoints
+## Points finaux
 . ## GET/livres
 
     GENERAL:
