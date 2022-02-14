@@ -71,8 +71,7 @@ L'API vous renvoie 4 types d'erreur:
     GENERAL:
         Cet endpoint retourne la liste des objets livres, la valeur du succès et le total des livres. 
     
-        
-    EXEMPLE: curl https://bookapi-v1.herokuapp.com/livres
+       
 ```
         {
     "livres": [
@@ -114,8 +113,7 @@ L'API vous renvoie 4 types d'erreur:
   GENERAL:
   Cet endpoint permet de récupérer les informations d'un livre particulier s'il existe par le biais de l'ID.
 
-    EXEMPLE: https://bookapi-v1.herokuapp.com/books/3
-```
+ 
    {
     "auteur": "Kossi\n",
     "categorie_id": 5,
@@ -133,8 +131,7 @@ L'API vous renvoie 4 types d'erreur:
     GENERAL:
         Supprimer un element si l'ID existe. Retourne l'ID du livre supprimé, la valeur du succès et le nouveau total.
 
-        EXEMPLE: curl -X DELETE https://bookapi-v1.herokuapp.com/books/3
-```
+    
   
 {
     "delete successfully": 3,
@@ -145,8 +142,7 @@ L'API vous renvoie 4 types d'erreur:
   Cet endpoint permet de mettre à jour, le titre, l'auteur, et l'éditeur du livre.
   Il retourne un livre mis à jour.
 
-  EXEMPLE.....Avec Patch
-  ``` curl -X PATCH https://bookapi-v1.herokuapp.com/books/1 -H "Content-Type:application/json" -d '{
+{
     "auteur": "Damali\n",
     "categorie_id": 3,
     "date_publication": "Sun, 01 Jan 2017 00:00:00 GMT",
@@ -166,7 +162,7 @@ L'API vous renvoie 4 types d'erreur:
         Cet endpoint retourne la liste des categories de livres, la valeur du succès et le total des categories disponibles. 
     
         
-    EXEMPLE: curl https://bookapi-v1.herokuapp.com/categories
+   
 
       {
     "Categorie": [
@@ -196,8 +192,7 @@ L'API vous renvoie 4 types d'erreur:
   GENERAL:
   Cet endpoint permet de récupérer les informations d'une categorie si elle existe par le biais de l'ID.
 
-    EXEMPLE: https://bookapi-v1.herokuapp.com/categories/3
-```
+  
    {
     "id": 3,
     "libelle_categorie": "Conte"
@@ -223,8 +218,7 @@ L'API vous renvoie 4 types d'erreur:
   Cet endpoint permet de mettre à jour le libelle ou le nom de la categorie.
   Il retourne une nouvelle categorie avec la nouvelle valeur.
 
-  EXEMPLE.....Avec Patch
-  ``` curl -X PATCH 'https://bookapi-v1.herokuapp.com/categories/4' -H "Content-Type:application/json" 
+  
   {
     "query": {
         "id": 4,
@@ -232,16 +226,14 @@ L'API vous renvoie 4 types d'erreur:
     },
     "success modify": true
 }
-  ```
-  ```
+  
 
 .##GET/livres/categories(id)
   GENERAL:
   Cet endpoint permet de lister les livres appartenant à une categorie donnée.
   Il renvoie la classe de la categorie et les livres l'appartenant.
 
-    EXEMPLE: https://bookapi-v1.herokuapp.com/categories/4/livres
-```
+    
    {
     "Livres": [],
     "success": true,
